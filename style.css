@@ -1,0 +1,144 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: brown;
+}
+
+
+.container {
+    width:80%;
+    height:100%;
+
+}
+
+.bg {
+    width:1300px;
+    height:780px;
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top:0px;
+
+
+}
+
+
+a {
+    background-color: saddlebrown;
+    position: absolute;
+    border-radius: 100%;
+    transition: all .5s ease;
+  
+}
+
+
+
+a img {
+    width: 120px;
+    height: 120px;
+    transition: all .5s ease;
+    border-radius: 100%;
+}
+
+a img:hover {
+transform: scale(1.1);
+}
+
+
+
+/* küçültünce sola gider  / çalışması için .bg nin right:0px  silip left:0px demen lazım*/
+.img-one {
+left:10px;
+top:550px;
+}
+
+.img-two {
+    left:650px;
+    top: 120px;
+}
+
+.img-three {
+  left:1150px;
+  top:600px;
+}
+
+
+
+
+
+
+
+
+/* küçültünce sağa gider  / çalışması için .bg nin left:0px silip right:0px demen lazım*/
+
+ /* .img-one {
+    right:1150px;
+    top:550px;
+    }
+    
+    .img-two {
+        right:500px;
+        top: 120px;
+    }
+    
+    .img-three {
+      right:30px;
+      top:600px;
+    }  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+    color: #900;
+    text-decoration: none;
+  }
+  
+
+  
+a[data]:hover:after {
+    content: attr(data);
+    padding: 4px 8px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    left: 120px;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    border-radius: 5px ;
+    background: rgba(0,0,0,0.5);
+    height:50px;
+  } 
+
+
+.img-three[data]:hover:after {
+    content: attr(data);
+    padding: 4px 8px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top:50px !important;
+    left: -500px;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    border-radius: 5px ;
+    background: rgba(0,0,0,0.5);
+    height:50px;
+}
+
+
+
